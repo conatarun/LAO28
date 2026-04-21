@@ -1,0 +1,20 @@
+run = "npm run start"
+modules = ["nodejs-20"]
+entrypoint = "server/src/index.ts"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm run build && npm run start"]
+deploymentTarget = "cloudrun"
+build = ["sh", "-c", "npm install && npm run build"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[env]
+PORT = "3000"
+HOST = "0.0.0.0"
+DATA_DIR = "./data"

@@ -1,0 +1,22 @@
+[
+  { "slug": "sofi-stadium", "name": "SoFi Stadium", "lat": 33.9534, "lng": -118.3387, "city": "Inglewood, CA", "sports": ["Opening Ceremony", "Closing Ceremony"] },
+  { "slug": "la-memorial-coliseum", "name": "Los Angeles Memorial Coliseum", "lat": 34.0141, "lng": -118.2879, "city": "Los Angeles, CA", "sports": ["Athletics"] },
+  { "slug": "crypto-arena", "name": "Crypto.com Arena", "lat": 34.0430, "lng": -118.2673, "city": "Los Angeles, CA", "sports": ["Gymnastics"] },
+  { "slug": "intuit-dome", "name": "Intuit Dome", "lat": 33.9454, "lng": -118.3412, "city": "Inglewood, CA", "sports": ["Basketball"] },
+  { "slug": "bmo-stadium", "name": "BMO Stadium", "lat": 34.0128, "lng": -118.2849, "city": "Los Angeles, CA", "sports": ["Football"] },
+  { "slug": "dignity-health", "name": "Dignity Health Sports Park", "lat": 33.8644, "lng": -118.2611, "city": "Carson, CA", "sports": ["Tennis", "Track Cycling"] },
+  { "slug": "honda-center", "name": "Honda Center", "lat": 33.8078, "lng": -117.8766, "city": "Anaheim, CA", "sports": ["Indoor Volleyball"] },
+  { "slug": "long-beach-arena", "name": "Long Beach Arena", "lat": 33.7620, "lng": -118.1892, "city": "Long Beach, CA", "sports": ["Handball"] },
+  { "slug": "long-beach-conv", "name": "Long Beach Convention Center", "lat": 33.7646, "lng": -118.1886, "city": "Long Beach, CA", "sports": ["Fencing", "Taekwondo"] },
+  { "slug": "long-beach-waterfront", "name": "Long Beach Waterfront", "lat": 33.7520, "lng": -118.1937, "city": "Long Beach, CA", "sports": ["Triathlon", "Marathon Swimming"] },
+  { "slug": "venice-beach", "name": "Venice Beach", "lat": 33.9850, "lng": -118.4695, "city": "Los Angeles, CA", "sports": ["Beach Volleyball"] },
+  { "slug": "santa-monica-beach", "name": "Santa Monica Beach", "lat": 34.0094, "lng": -118.4973, "city": "Santa Monica, CA", "sports": ["Skateboarding"] },
+  { "slug": "rose-bowl", "name": "Rose Bowl Stadium", "lat": 34.1613, "lng": -118.1676, "city": "Pasadena, CA", "sports": ["Football"] },
+  { "slug": "pauley-pavilion", "name": "Pauley Pavilion (UCLA)", "lat": 34.0700, "lng": -118.4468, "city": "Los Angeles, CA", "sports": ["Badminton"] },
+  { "slug": "galen-center", "name": "Galen Center (USC)", "lat": 34.0220, "lng": -118.2857, "city": "Los Angeles, CA", "sports": ["Boxing"] },
+  { "slug": "la-convention", "name": "Los Angeles Convention Center", "lat": 34.0403, "lng": -118.2695, "city": "Los Angeles, CA", "sports": ["Judo", "Wrestling", "Table Tennis"] },
+  { "slug": "oklahoma-softball", "name": "Devon Park (OKC)", "lat": 35.5031, "lng": -97.5364, "city": "Oklahoma City, OK", "sports": ["Softball", "Canoe Slalom"] },
+  { "slug": "lake-perris", "name": "Lake Perris", "lat": 33.8819, "lng": -117.1589, "city": "Perris, CA", "sports": ["Rowing", "Canoe Sprint"] },
+  { "slug": "frogtown-park", "name": "LA River (Frogtown)", "lat": 34.0980, "lng": -118.2486, "city": "Los Angeles, CA", "sports": ["Cycling BMX"] },
+  { "slug": "oak-tree", "name": "Oak Tree Gardens", "lat": 34.4208, "lng": -118.0248, "city": "Santa Clarita, CA", "sports": ["Equestrian"] }
+]

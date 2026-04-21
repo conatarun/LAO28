@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Animated gradient background for hero */
+.hero-bg {
+  background:
+    radial-gradient(ellipse at 20% -10%, rgba(255, 77, 45, 0.35), transparent 55%),
+    radial-gradient(ellipse at 100% 120%, rgba(245, 183, 0, 0.22), transparent 50%),
+    linear-gradient(135deg, #0b0d10 0%, #111418 100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-ring::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(130deg, rgba(255,77,45,.6), transparent 40%, rgba(245,183,0,.4));
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+@layer base {
+  html { font-size: clamp(15px, 0.9vw + 12px, 18px); }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl bg-white shadow-sm border border-black/5 p-4 md:p-5;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full bg-black/5 px-2.5 py-1 text-xs font-medium;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-ink text-white px-4 py-2.5 text-sm md:text-base font-semibold hover:opacity-90 active:scale-[.98] transition;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm hover:bg-black/5 transition;
+  }
+  .nav-link {
+    @apply px-3 py-1.5 rounded-lg text-sm md:text-base font-medium text-black/70 hover:text-black hover:bg-black/5;
+  }
+  .nav-link-active {
+    @apply bg-ink text-white hover:bg-ink hover:text-white;
+  }
+
+  /* Fluid display headings */
+  .h-hero     { font-size: clamp(2.25rem, 6vw + 0.5rem, 5.5rem); line-height: 0.95; }
+  .h-section  { font-size: clamp(1.25rem, 1.2vw + 0.9rem, 2rem); line-height: 1.1; }
+  .h-eyebrow  { font-size: clamp(.7rem, .15vw + .65rem, .85rem); letter-spacing: 0.18em; }
+
+  .line-clamp-2 {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+}
+
+/* Fluid list transitions */
+.fade-in {
+  animation: fadeIn 200ms ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(2px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
