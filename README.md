@@ -6,6 +6,10 @@ A fluid, open-source dashboard for the **2028 Los Angeles Olympic Games** schedu
 
 ![Stack](https://img.shields.io/badge/React-TypeScript-blue) ![DB](https://img.shields.io/badge/SQLite-WAL-green) ![AI](https://img.shields.io/badge/AI-OpenRouter%20Free-orange) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+<p align="center">
+  <img src="docs/demo.gif" alt="LA28 Dashboard Demo" width="800" />
+</p>
+
 ---
 
 ## Features
